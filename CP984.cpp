@@ -21,22 +21,22 @@ SAMPLE INPUT                                             SAMPLE OUTPUT
 
 
 */
-#include <iostream>
+ #include <iostream>
 using namespace std;
 
 int main() {
-	int t; //test case
-	cin>>t;
-	while(t--){
-	    int a, b,count = 0; // a = no. of players , b = height of Gi-Hun and Ali
-	    cin>>a>>b;
-	    int arr[a];       
-	    for(int i = 0; i<a; i++){
-	       cin>>arr[i];
-	       if(b<arr[i])
+	int t;
+	cin>>T;
+	while(T--){
+	    int N, H,count = 0;
+	    cin>>N>>H;
+	    int H_cmpr[N];
+	    for(int i = 0; i<N; i++){
+	       cin>>H_cmpr[i];
+	       if(H < H_cmpr[i])
 	          count++;
 	    }
-	    cout<<count<<endl;
+	   cout<<count<<endl;
 	}
 	return 0;
 }
