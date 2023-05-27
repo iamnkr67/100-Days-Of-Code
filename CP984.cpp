@@ -1,4 +1,4 @@
-?* 
+/*
 “You won’t get caught if you hide behind someone.”
 
 Sang-Woo advises Gi-Hun to hide behind someone to avoid getting shot.
@@ -25,7 +25,7 @@ SAMPLE INPUT                                             SAMPLE OUTPUT
 using namespace std;
 
 int main() {
-	int t;
+	int T;
 	cin>>T;
 	while(T--){
 	    int N, H,count = 0;
